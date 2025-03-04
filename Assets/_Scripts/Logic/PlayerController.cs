@@ -39,7 +39,10 @@ public class PlayerController : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0, freeLookCamera.transform.rotation.eulerAngles.y, 0);
     }
-
+    public void UpdateMaxSpeed (float speed) 
+    {
+        maxSpeed = speed;
+    }
     private void FixedUpdate()
     {
         if (isDashing)
